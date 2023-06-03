@@ -25,7 +25,7 @@ def compareTimezones(inputDatetime, tzPST, tzEST, rowData):
 	return csv_processed_data 
 
 def writeProcessedData(data):
-    with open('processed_data/timezone_data.csv', 'w', newline='') as csv_file:
+    with open('./python/processed_data/timezone_data.csv', 'w', newline='') as csv_file:
      csv_writer = csv.writer(csv_file, delimiter=',')
      csv_writer.writerow(['Timezone', 'Variation to PST', 'Variation to EST', 'Comparison'])
      csv_writer.writerows(data)
@@ -40,7 +40,7 @@ estTimezone = estTZ.localize(inputDatetime)
 print(f'EST Time: {estTimezone}')
 
 timezoneData = []
-with open('data/timedata.csv') as csv_file:
+with open('./python/data/timedata.csv') as csv_file:
 	csv_reader = csv.reader(csv_file, delimiter=',')
 	
 	for rowData in csv_reader:
