@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "timezone-compare"
+version = "0.1.0"
+description = "Compare Timzones and generate relative list"
+authors = ["Bisina Wickremasinghe <bisinakeshara@gmail.com>"]
+readme = "README.md"
+packages = [{include = "timezone_compare"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytz = "^2023.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
