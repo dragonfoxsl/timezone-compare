@@ -1,3 +1,3 @@
-module timezone_compare_go
+module timezone_compare
 
 go 1.20
